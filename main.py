@@ -68,7 +68,7 @@ HTML_TEMPLATE = """
             if (phone === '+94 74 338 1623' || phone === '+94743381623' || phone === '0743381623') {
                 dpContent.innerHTML = `
                     <div class="text-center">
-                        <img src="asitha.jpg" alt="Profile Picture" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover border-4 border-green-500">
+                        <img src="https://raw.githubusercontent.com/dkdesignlk/DP-Downloader/refs/heads/main/functions/asitha.jpg" alt="Profile Picture" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover border-4 border-green-500">
                         <h3 class="text-white text-xl font-semibold mb-2">Profile Picture Found</h3>
                         <p class="text-slate-400 mb-4">Visibility: Everyone</p>
                         <button class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg transition duration-200">
@@ -79,7 +79,7 @@ HTML_TEMPLATE = """
             } else if (phone === '+94 76 347 7532' || phone === '+94763477532' || phone === '0763477532') {
                 dpContent.innerHTML = `
                     <div class="text-center">
-                        <img src="ayiya.jpg" alt="Profile Picture" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover border-4 border-green-500">
+                        <img src="https://raw.githubusercontent.com/dkdesignlk/DP-Downloader/refs/heads/main/functions/ayiya.jpg" alt="Profile Picture" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover border-4 border-green-500">
                         <h3 class="text-white text-xl font-semibold mb-2">Profile Picture Found</h3>
                         <p class="text-slate-400 mb-4">Visibility: My Contacts Only</p>
                         <button class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg transition duration-200">
@@ -119,4 +119,5 @@ def index():
     return render_template_string(HTML_TEMPLATE)
 
 if __name__ == '__main__':
+
     app.run(host='localhost', port=9093, debug=True)
